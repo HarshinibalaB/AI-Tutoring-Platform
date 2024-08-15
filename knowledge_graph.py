@@ -14,3 +14,6 @@ class KnowledgeGraph:
 
     def get_related_concepts(self, concept):
         return self.graph.get(concept, [])
+knowledge_graph = KnowledgeGraph()
+knowledge_graph.add_concept('Algebra')
+knowledge_graph.add_relationship('Algebra', 'Quadratic Equations')
